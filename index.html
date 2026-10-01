@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Mesa Verde · L’Espagne à table, au bord de la lagune · Marchica</title>
+<meta name="description" content="La Mesa Verde, bar et restaurant à Marchica (Nador), à côté du golf d’Atalayoun : gastronomie méditerranéenne, tapas et terrasse panoramique sur le green. Tous les jours de 9 h 30 à 1 h.">
+<meta name="theme-color" content="#121512">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23121512'/%3E%3Ccircle cx='32' cy='32' r='14' fill='%239fd04f'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Ysabeau+Infant:ital,wght@0,300..800;1,300..600&family=Ysabeau+Office:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cloth" id="cloth" aria-hidden="true"><div class="cloth__sheet"></div><p class="cloth__script">La Mesa Verde</p></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top"><span class="brand__script">La Mesa Verde</span></a>
+  <nav class="nav__links" aria-label="Principal">
+    <a href="#carte" data-i18n="nav.food">À table</a>
+    <a href="#plan" data-i18n="nav.plan">Votre table</a>
+    <a href="#green" data-i18n="nav.green">Le green</a>
+    <a href="#venir" data-i18n="nav.visit">Venir</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Langue">
+    <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+    <button type="button" data-lang="es" aria-pressed="false">ES</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero__copy">
+      <p class="hero__script">La Mesa Verde</p>
+      <h1 class="hero__title" data-i18n="hero.title">L’Espagne à table, au bord de la lagune.</h1>
+      <p class="hero__sub" data-i18n="hero.sub">Gastronomie méditerranéenne, tapas et terrasse panoramique sur le green du golf d’Atalayoun.</p>
+      <div class="hero__cta">
+        <a class="btn btn--lawn" href="#plan" data-i18n="cta.plan">Choisir ma table</a>
+        <a class="btn btn--line" href="#carte" data-i18n="cta.food">Voir la table</a>
+      </div>
+    </div>
+    <figure class="hero__fig"><img src="assets/img/terrasse-green.jpg" alt="Terrasse avec tables face au green du golf jusqu’à l’horizon" width="900" height="1600"></figure>
+    <span class="horizon" aria-hidden="true"></span>
+  </section>
+
+  <section class="food" id="carte">
+    <h2 class="h2"><span data-i18n="food.title">Gastronomía, copas</span> <i data-i18n="food.more">y mucho más</i></h2>
+    <p class="lead" data-i18n="food.lead">La devise inscrite sous leur logo. Tapas à partager, plats méditerranéens et cocktails sur la terrasse.</p>
+    <div class="food__row">
+      <figure class="fd fd--a"><img src="assets/img/tapas.jpg" alt="Tapas dressées sur une ardoise noire" loading="lazy" width="1600" height="739"><figcaption><b data-i18n="f1">Tapas</b><span data-i18n="f1.t">À partager au milieu de la table</span></figcaption></figure>
+      <figure class="fd fd--b"><img src="assets/img/cazuela.jpg" alt="Plat méditerranéen servi avec du citron" loading="lazy" width="1600" height="900"><figcaption><b data-i18n="f2">Platos</b><span data-i18n="f2.t">Cuisine méditerranéenne à l’espagnole</span></figcaption></figure>
+      <figure class="fd fd--c"><img src="assets/img/tapas-2.jpg" alt="Bouchées dressées sur une planche" loading="lazy" width="739" height="1600"><figcaption><b data-i18n="f3">Bouchées</b><span data-i18n="f3.t">Pour l’apéritif face au green</span></figcaption></figure>
+      <figure class="fd fd--d"><img src="assets/img/bar.jpg" alt="Comptoir du bar avec boissons préparées" loading="lazy" width="1200" height="1600"><figcaption><b data-i18n="f4">Copas</b><span data-i18n="f4.t">Cocktails et verres en terrasse</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="plan" id="plan">
+    <div class="plan__head">
+      <h2 class="h2" data-i18n="plan.title">Choisissez votre mesa</h2>
+      <p class="lead" data-i18n="plan.lead">Touchez une table sur le plan, choisissez l’heure et envoyez la demande. Plan indicatif : l’équipe confirme la place.</p>
+    </div>
+    <div class="plan__wrap">
+      <svg class="floor" id="floor" viewBox="0 0 800 520" role="group" aria-label="Plan de la terrasse et de la salle">
+        <rect class="floor__lawn" x="0" y="0" width="800" height="120"/>
+        <text class="floor__zone floor__zone--lawn" x="400" y="66" text-anchor="middle" data-i18n-svg="z.lawn">Green du golf</text>
+        <rect class="floor__area" x="40" y="140" width="720" height="150" rx="10"/>
+        <text class="floor__zone" x="56" y="166" data-i18n-svg="z.terrace">Terrasse haute · vue sur le green</text>
+        <rect class="floor__area" x="40" y="310" width="470" height="180" rx="10"/>
+        <text class="floor__zone" x="56" y="336" data-i18n-svg="z.room">Salle</text>
+        <rect class="floor__area floor__area--bar" x="530" y="310" width="230" height="180" rx="10"/>
+        <text class="floor__zone" x="546" y="336" data-i18n-svg="z.bar">Bar</text>
+        <g id="tables"></g>
+      </svg>
+      <form class="book" id="book" novalidate>
+        <p class="book__pick" id="pick" aria-live="polite"></p>
+        <div class="book__field">
+          <span class="book__lbl" data-i18n="b.time">Heure</span>
+          <div class="slots" id="slots" role="radiogroup"></div>
+        </div>
+        <div class="book__row">
+          <label class="book__field"><span class="book__lbl" data-i18n="b.date">Date</span><input type="date" id="date"></label>
+          <label class="book__field"><span class="book__lbl" data-i18n="b.ppl">Personnes</span><input type="number" id="ppl" min="1" max="12" value="2"></label>
+        </div>
+        <p class="book__sum" id="sum"></p>
+        <button class="btn btn--lawn btn--wide" type="button" id="send"><i class="ph ph-instagram-logo"></i><span data-i18n="b.send">Envoyer la demande</span></button>
+        <p class="book__note" id="note" aria-live="polite" data-i18n="b.note">Le texte de la demande est copié : collez-le dans le message Instagram qui s’ouvre.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="greenzone" id="green">
+    <figure class="gz gz--a"><img src="assets/img/diner-coucher.jpg" alt="Dîner en terrasse au coucher du soleil" loading="lazy" width="960" height="1280"></figure>
+    <div class="gz__txt">
+      <h2 class="h2" data-i18n="g.title">Le green jusqu’à l’horizon</h2>
+      <p data-i18n="g.p">Un bâtiment moderne et blanc, posé à côté de l’académie de golf de Marchica. La terrasse haute ouvre une vue panoramique sur le gazon, la lagune et le ciel du soir.</p>
+    </div>
+    <figure class="gz gz--b"><img src="assets/img/nuit.jpg" alt="Le restaurant illuminé la nuit au bord du green" loading="lazy" width="1600" height="1200"></figure>
+    <figure class="gz gz--c"><img src="assets/img/batiment.jpg" alt="Le bâtiment blanc et la pelouse du golf en journée" loading="lazy" width="511" height="640"></figure>
+  </section>
+
+  <section class="reviews" aria-labelledby="revT">
+    <h2 class="h2" id="revT" data-i18n="rev.title">« Repetiría sin dudarlo »</h2>
+    <div class="reviews__grid" id="reviews"></div>
+  </section>
+
+  <section class="visit" id="venir">
+    <div class="visit__txt">
+      <h2 class="h2" data-i18n="v.title">Marchica, route N15, à côté du golf</h2>
+      <dl>
+        <div><dt data-i18n="v.h">Horaires</dt><dd data-i18n="v.h.v">Tous les jours, de 9 h 30 à 1 h</dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/lamesaverde.marchica/" target="_blank" rel="noopener">@lamesaverde.marchica</a></dd></div>
+      </dl>
+      <div class="visit__cta">
+        <a class="btn btn--lawn" href="https://www.google.com/maps/search/?api=1&query=La+Mesa+Verde+Marchica+Nador" target="_blank" rel="noopener" data-i18n="cta.route">Itinéraire</a>
+        <a class="btn btn--line" href="https://ig.me/m/lamesaverde.marchica" target="_blank" rel="noopener" data-i18n="cta.dm">Écrire sur Instagram</a>
+      </div>
+    </div>
+    <figure class="visit__fig"><img src="assets/img/nuit-green.jpg" alt="Le green éclairé la nuit" loading="lazy" width="1600" height="739"></figure>
+  </section>
+
+</main>
+
+<footer class="foot"><p><span class="brand__script">La Mesa Verde</span> · Gastronomía, copas y mucho más · Marchica, Nador</p></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
